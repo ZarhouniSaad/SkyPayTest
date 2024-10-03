@@ -30,11 +30,11 @@ public class AccountTest {
         String currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         String expectedStatement =
                 "DATE       || AMOUNT  || BALANCE\n" +
-                        currentDate+" || -500  || 2500\n" +
-                        currentDate+" || 2000  || 3000\n" +
-                        currentDate+" || 1000  || 1000\n";
+                        currentDate+" || -500    || 2500\n" +
+                        currentDate+" || 2000    || 3000\n" +
+                        currentDate+" || 1000    || 1000\n";
 
-        // Reformat output line separator difference
+        // Reading output from outContent and Reformat
         String actualStatement=outContent.toString();
         actualStatement=actualStatement.replace("\r\n", "\n");
 

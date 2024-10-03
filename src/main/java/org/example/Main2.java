@@ -3,6 +3,8 @@ package org.example;
 import org.example.service.Account;
 
 public class Main2 {
+
+    //Second Scenario : Négatif deposit
     public static void main(String[] args) {
         //initially the amount is 0
         Account account=new Account();

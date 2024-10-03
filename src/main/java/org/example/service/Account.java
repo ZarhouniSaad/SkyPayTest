@@ -7,6 +7,11 @@ public class Account implements AccountService {
     private int balance = 0;
     private List<Transaction> transactions = new ArrayList<>();
 
+    public Account(){}
+
+    public Account(int balance){
+        this.balance=balance;
+    }
     @Override
     public void deposit(int amount) {
         // Amount should be positive
@@ -37,7 +42,7 @@ public class Account implements AccountService {
         // Printing transactions list in reverse
         for (int i=transactions.size()-1;i>=0;i--) {
             Transaction transaction=transactions.get(i);
-            System.out.print(transaction.getDate() + " || " + transaction.getAmount() + "  || " + transaction.getBalance()+"\n");
+            System.out.print(transaction.getDate() + " || " + transaction.getAmount() + "    || " + transaction.getBalance()+"\n");
         }
     }
 }
