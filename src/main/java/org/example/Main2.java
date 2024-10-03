@@ -4,7 +4,7 @@ import org.example.service.Account;
 
 public class Main2 {
 
-    //Second Scenario : Négatif deposit
+    //Second Scenario : Négative deposit
     public static void main(String[] args) {
         //initially the amount is 0
         Account account=new Account();
